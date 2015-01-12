@@ -1,0 +1,1 @@
+aws lambda invoke-async --function-name "LambdaTest" --invoke-args data.json

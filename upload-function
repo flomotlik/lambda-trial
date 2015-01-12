@@ -1,0 +1,12 @@
+rm LambdaTest.zip
+zip -r LambdaTest.zip LambdaTest.js
+aws lambda upload-function \
+   --region us-east-1 \
+   --function-name "LambdaTest"  \
+   --function-zip ./LambdaTest.zip \
+   --role YOUR_AWS_LAMBDA_ROLE_HERE  \
+   --mode event \
+   --handler LambdaTest.handler \
+   --runtime nodejs \
+   --timeout 10 \
+   --memory-size 128
