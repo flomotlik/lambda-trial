@@ -1,1 +1,8 @@
-aws lambda invoke-async --function-name "LambdaTest" --invoke-args data.json
+#/bin/bash
+set -e
+
+aws lambda invoke \
+  --function-name LambdaTest \
+  --payload "$(cat data.json)" \
+  lambda_output.txt
+cat lambda_output.txt
