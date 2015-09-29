@@ -1,0 +1,2 @@
+- service: awsdeploy
+  command: /deploy/deploy_to_lambda.sh

@@ -1,0 +1,5 @@
+awsdeploy:
+  image: codeship/aws-deployment
+  encrypted_env_file: aws.env.encrypted
+  volumes:
+    - ./:/deploy
