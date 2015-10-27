@@ -8,6 +8,8 @@ function lambda_invoke {
   echo -e "\n"
 }
 
+cd /deploy
+
 echo "Output before deployment"
 lambda_invoke
 
